@@ -100,12 +100,10 @@ wddButton.addEventListener("click", () => {
 
 function displayCourses(courses) {
     courseContainer.innerHTML = "";
-    let credits = 0;
 
     for (const course of courses) {
         const courseParagraph = document.createElement("p");
         courseParagraph.classList.add("course");
-        credits += course.credits;
 
         if (course.completed) {
             courseParagraph.innerHTML = `✓ ${course.subject} ${course.number}`;
@@ -118,5 +116,5 @@ function displayCourses(courses) {
         courseContainer.appendChild(courseParagraph);
     }
 
-    courseCredits.innerHTML = credits;
+    courseCredits.innerHTML = courses.reduce((total, course) => total + course.credits, 0);
 }
