@@ -1,0 +1,207 @@
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: "Artifika", serif;
+}
+
+/*
+#    # ######  ####  ####   ###### ######
+#    # #      #    # #   #  #      #    #
+###### ###### ###### #    # ###### ######
+#    # #      #    # #   #  #      #   # 
+#    # ###### #    # ####   ###### #    #
+*/
+
+header span {
+    font-size: 1.25rem;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "X";
+}
+
+#hamburger-label {
+    display: none;
+}
+
+#home-header {
+    display: grid;
+    grid-template-columns: 72px auto 48px;
+    column-gap: 5px;
+    align-items: end;
+    padding: 8px 0 8px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#home-header a {
+    padding-bottom: 2px;
+}
+
+/*
+##    #  ####  #       #
+# #   # #    #  #     #
+#  #  # ######   #   #
+#   # # #    #    # #
+#    ## #    #     #
+*/
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.main-nav {
+    display: none;
+}
+
+.main-nav.show {
+    display: block;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav a {
+    display: block;
+    padding: 0.7rem 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 1.5rem;
+    color: #b77439;
+}
+
+.main-nav a:hover {
+    background-color: #ccc;
+}
+
+#wayfinder {
+    background-color: #fff8dc;
+}
+
+/*
+#       #  ####  ##### ##    #
+##     ## #    #   #   # #   #
+# #   # # ######   #   #  #  #
+#  # #  # #    #   #   #   # #
+#   #   # #    # ##### #    ##
+*/
+
+h1 {
+    font-size: 2.5rem;
+}
+
+section {
+    margin: 0 10px;
+}
+
+h2 {
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+p {
+    padding: 0 10px;
+    font-size: 1.25rem;
+}
+
+.visual-text section {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    background-color: #fff8dc;
+}
+
+.certificate {
+    text-align: center;
+}
+
+.course-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.course-types button {
+    padding: 1rem 0;
+    border: 1px solid #eee;
+    font-size: 1.25rem;
+    background-color: #b77439;
+    cursor: pointer;
+}
+
+.course-types button:hover {
+    background-color: #fff8dc;
+}
+
+.course {
+    margin: 0.5rem 0;
+    border: 1px solid #eee;
+    padding: 1rem;
+    background-color: #fff8dc;
+}
+
+.complete {
+    background-color: #b77439;
+}
+
+#home-heading {
+    padding: 0 0 0 10px;
+}
+
+#portrait {
+    text-align: center;
+}
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*
+###### ########## ########## ##### ###### ######
+#      #        # #        #   #   #      #    #
+###### #        # #        #   #   ###### ######
+#      #        # #        #   #   #      #   #
+#      ########## ##########   #   ###### #    #
+*/
+
+footer {
+    text-align: center;
+    background-color: #fff8dc;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+}
+
+.metadata {
+    padding: 0.5rem 0;
+}

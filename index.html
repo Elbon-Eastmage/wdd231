@@ -3,10 +3,99 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <meta name="author" content="Elbert John Eastmond">
+    <meta name="description" content="John Eastmond's personal website for WDD 231 - Web Frontend Development I.">
+    <title>WDD 231 - Web Frontend Development I - Elbert John Eastmond</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Artifika&display=swap" rel="stylesheet">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 - Elbert John Eastmond</h1>
+    <header id="home-header">
+        <a href="index.html"><img src="images/quena.svg" alt="Quena" width="72" height="49"></a>
+        <span>Elbert John Eastmond</span>
+        <button class="hamburger" aria-labelledby="hamburger-label"></button>
+        <div id="hamburger-label">Menu Button</div>
+    </header>
+    <nav class="main-nav">
+        <ul>
+            <li id="wayfinder">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Chamber Project</a>
+            </li>
+            <li>
+                <a href="#">Final Project</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 id="home-heading">Home</h1>
+        <div class="visual-text">
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    I am a lifelong resident of the beautiful state of Utah. I love books, video
+                    games, daydreaming, and bringing joy to others. I also cherish my family and
+                    The Church of Jesus Christ of Latter-day Saints.
+                </p>
+                <p>
+                    I graduated from Canyon View High School in 2009. From 2011 to 2012, I served
+                    as a Church missionary in the Family and Church History Headquarters Mission.
+                    I am currently striving to get a Software Development Associate Degree through
+                    BYU-Pathway.
+                </p>
+            </section>
+            <section id="portrait">
+                <h2>Student Photo</h2>
+                <picture>
+                    <source srcset="images/john.webp" media="(min-width: 800px)">
+                    <img src="images/john-small.webp" alt="John Eastmond" width="300" height="331">
+                </picture>
+            </section>
+        </div>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate Courses</h2>
+            <div class="course-types">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courses"></div>
+            <p>Total number of credits for above courses: <span id="course-credits" </p>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.youtube.com/@ElbonEastmage" target="_blank">
+                        <img src="images/youtube.svg" alt="YouTube" width="48" height="48">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Elbon-Eastmage" target="_blank">
+                        <img src="images/github.svg" alt="GitHub" width="49" height="48">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/elbert-eastmond-8450b4399" target="_blank">
+                        <img src="images/linkedin.svg" alt="LinkedIn" width="57" height="48">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="metadata">
+            <p><span class="copyright"></span> | Elbert John Eastmond | Utah</p>
+            <p>Last Modification: <span class="last-modified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
