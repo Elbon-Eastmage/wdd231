@@ -90,6 +90,10 @@ nav a {
     color: var(--primary-color);
 }
 
+#sky:hover {
+    color: var(--secondary-color);
+}
+
 #sky::before {
     content: "☀";
 }
@@ -123,12 +127,37 @@ main {
     padding: 0.5rem;
 }
 
-.card {
+.view-buttons {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.view-buttons button {
+    margin-right: 1rem;
+    padding: 0.25rem 1rem;
+    font-size: 1.25rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+.view-buttons button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.list h2 {
+    font-size: 1rem;
+}
+
+.entry {
+    margin-bottom: 1rem;
+    padding: 1rem;
     border: 1px solid #000;
     border-radius: 4px;
     box-shadow: 0 0 4px #888;
     text-align: center;
-    color: #fff;
+    background-color: #fff;
 }
 
 /*
@@ -142,6 +171,7 @@ main {
 footer {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
     padding: 0.5rem;
     background-color: #ffebcd;
 }

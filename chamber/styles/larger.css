@@ -29,6 +29,22 @@
         padding: 0.5rem 20%;
     }
 
+    .view-buttons {
+        margin-top: 1rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        justify-content: center;
+    }
+
+    .list .entry {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
     footer {
         padding: 0.5rem 20%;
         flex-direction: row;
