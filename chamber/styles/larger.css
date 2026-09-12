@@ -1,0 +1,37 @@
+@media screen and (min-width: 900px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 20%;
+        background-color: #ffebcd;
+    }
+
+    header a {
+        padding: 0 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    #main-nav {
+        display: block;
+    }
+
+    #main-nav-list {
+        display: flex;
+        align-items: center;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    main {
+        padding: 0.5rem 20%;
+    }
+
+    footer {
+        padding: 0.5rem 20%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

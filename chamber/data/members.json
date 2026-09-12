@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Cozy Cat Corner",
+            "address": "1415 North 2100 East",
+            "phone": "888-111-3456",
+            "url": "https://elbon-eastmage.github.io/wdd131/project/",
+            "imageFileName": "images/cat.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Digital Dragon Domain",
+            "address": "1415 North 2100 East",
+            "phone": "888-111-3456",
+            "url": "https://elbon-eastmage.github.io/wdd131/project/",
+            "imageFileName": "images/dragon.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Heroes Incorporated",
+            "address": "1415 North 2100 East",
+            "phone": "888-111-3456",
+            "url": "https://elbon-eastmage.github.io/wdd131/project/",
+            "imageFileName": "images/sword.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Game Fame",
+            "address": "1415 North 2100 East",
+            "phone": "888-111-3456",
+            "url": "https://elbon-eastmage.github.io/wdd131/project/",
+            "imageFileName": "images/game.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Bountiful Bread",
+            "address": "1415 North 2100 East",
+            "phone": "888-111-3456",
+            "url": "https://elbon-eastmage.github.io/wdd131/project/",
+            "imageFileName": "images/bread.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Nice Ice",
+            "address": "1415 North 2100 East",
+            "phone": "888-111-3456",
+            "url": "https://elbon-eastmage.github.io/wdd131/project/",
+            "imageFileName": "images/ice.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Beehive Bay",
+            "address": "1415 North 2100 East",
+            "phone": "888-111-3456",
+            "url": "https://elbon-eastmage.github.io/wdd131/project/",
+            "imageFileName": "images/beehive.webp",
+            "membershipLevel": 3
+        }
+    ]
+}

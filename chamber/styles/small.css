@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #ff8c00;
+    --secondary-color: #0000cd;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #fffff0;
+    font-family: "Charis SIL", serif;
+}
+
+.assistive-text {
+    display: none;
+}
+
+.symbol-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.emphasize {
+    font-weight: 700;
+}
+
+/*
+#    # ######  ####  ####   ###### ######
+#    # #      #    # #   #  #      #    #
+###### ###### ###### #    # ###### ######
+#    # #      #    # #   #  #      #   # 
+#    # ###### #    # ####   ###### #    #
+*/
+
+header {
+    display: grid;
+    grid-template-columns: auto 48px 48px;
+    padding: 0.5rem;
+    background-color: #ffebcd;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    padding-left: 8px;
+    font-size: 1.5rem;
+}
+
+header a {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+header a:hover {
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.wayfinder {
+    text-decoration: underline;
+}
+
+#main-nav {
+    display: none;
+}
+
+#main-nav.show {
+    display: block;
+    grid-row: 2;
+}
+
+#sky {
+    padding-left: 1rem;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+#sky::before {
+    content: "☀";
+}
+
+#sky.dark::before {
+    content: "⏾";
+}
+
+#hamburger {
+    font-size: 2.25rem;
+}
+
+#hamburger::before {
+    content: "\2630";
+}
+
+#hamburger.show::before {
+    content: "X";
+}
+
+/*
+#       #  ####  ##### ##    #
+##     ## #    #   #   # #   #
+# #   # # ######   #   #  #  #
+#  # #  # #    #   #   #   # #
+#   #   # #    # ##### #    ##
+*/
+
+main {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.card {
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #888;
+    text-align: center;
+    color: #fff;
+}
+
+/*
+###### ########## ########## ##### ###### ######
+#      #        # #        #   #   #      #    #
+###### #        # #        #   #   ###### ######
+#      #        # #        #   #   #      #   #
+#      ########## ##########   #   ###### #    #
+*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color: #ffebcd;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer li {
+    padding-left: 1rem;
+}
