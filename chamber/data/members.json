@@ -6,7 +6,9 @@
             "city": "Lehi, UT 84043",
             "phone": "801-768-9544",
             "url": "www.lehibakery.com",
-            "imageFileName": "images/doughnut.webp",
+            "imageFileName": "images/doughnuts.webp",
+            "imageText": "doughnut",
+            "imageHeight": 80,
             "membershipLevel": 3
         },
         {
@@ -16,6 +18,8 @@
             "phone": "385-352-7544",
             "url": "www.dragonskeep.com",
             "imageFileName": "images/fire.webp",
+            "imageText": "fire",
+            "imageHeight": 53,
             "membershipLevel": 3
         },
         {
@@ -25,6 +29,8 @@
             "phone": "801-653-2700",
             "url": "www.costco.com",
             "imageFileName": "images/basket.webp",
+            "imageText": "basket",
+            "imageHeight": 80,
             "membershipLevel": 2
         },
         {
@@ -34,6 +40,8 @@
             "phone": "385-336-7867",
             "url": "www.dollartree.com",
             "imageFileName": "images/tree.webp",
+            "imageText": "tree",
+            "imageHeight": 80,
             "membershipLevel": 1
         },
         {
@@ -43,6 +51,8 @@
             "phone": "801-768-3578",
             "url": "www.pioneermarketlehi.com",
             "imageFileName": "images/handcart.webp",
+            "imageText": "handcart",
+            "imageHeight": 80,
             "membershipLevel": 2
         },
         {
@@ -52,6 +62,8 @@
             "phone": "801-768-6020",
             "url": "www.lowes.com",
             "imageFileName": "images/hammer.webp",
+            "imageText": "hammer",
+            "imageHeight": 68,
             "membershipLevel": 1
         },
         {
@@ -61,6 +73,8 @@
             "phone": "877-311-3566",
             "url": "lehimills.com",
             "imageFileName": "images/mill.webp",
+            "imageText": "mill",
+            "imageHeight": 80,
             "membershipLevel": 1
         }
     ]
