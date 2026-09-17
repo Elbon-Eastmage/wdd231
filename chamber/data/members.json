@@ -1,60 +1,67 @@
 {
     "companies": [
         {
-            "name": "Cozy Cat Corner",
-            "address": "1415 North 2100 East Lehi, UT 84043",
-            "phone": "888-111-3456",
-            "url": "https://elbon-eastmage.github.io/wdd231/",
-            "imageFileName": "images/cat.webp",
+            "name": "Lehi Bakery",
+            "address": "172 West Main Street",
+            "city": "Lehi, UT 84043",
+            "phone": "801-768-9544",
+            "url": "www.lehibakery.com",
+            "imageFileName": "images/doughnut.webp",
             "membershipLevel": 3
         },
         {
-            "name": "Digital Dragon Domain",
-            "address": "1415 North 2100 East Lehi, UT 84043",
-            "phone": "888-111-3456",
-            "url": "https://elbon-eastmage.github.io/wdd231/",
-            "imageFileName": "images/dragon.webp",
+            "name": "The Dragon's Keep",
+            "address": "189 East State Street",
+            "city": "Lehi, UT 84043",
+            "phone": "385-352-7544",
+            "url": "www.dragonskeep.com",
+            "imageFileName": "images/fire.webp",
             "membershipLevel": 3
         },
         {
-            "name": "Heroes Incorporated",
-            "address": "1415 North 2100 East Lehi, UT 84043",
-            "phone": "888-111-3456",
-            "url": "https://elbon-eastmage.github.io/wdd231/",
-            "imageFileName": "images/sword.webp",
+            "name": "Costco",
+            "address": "198 North 1200 East",
+            "city": "Lehi, UT 84043",
+            "phone": "801-653-2700",
+            "url": "www.costco.com",
+            "imageFileName": "images/basket.webp",
             "membershipLevel": 2
         },
         {
-            "name": "Game Fame",
-            "address": "1415 North 2100 East Lehi, UT 84043",
-            "phone": "888-111-3456",
-            "url": "https://elbon-eastmage.github.io/wdd231/",
-            "imageFileName": "images/game.webp",
+            "name": "Dollar Tree",
+            "address": "630 East State Street",
+            "city": "Lehi, UT 84043",
+            "phone": "385-336-7867",
+            "url": "www.dollartree.com",
+            "imageFileName": "images/tree.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Pioneer Market",
+            "address": "300 East Main",
+            "city": "Lehi, UT 84043",
+            "phone": "801-768-3578",
+            "url": "www.pioneermarketlehi.com",
+            "imageFileName": "images/handcart.webp",
             "membershipLevel": 2
         },
         {
-            "name": "Bountiful Bread",
-            "address": "1415 North 2100 East Lehi, UT 84043",
-            "phone": "888-111-3456",
-            "url": "https://elbon-eastmage.github.io/wdd231/",
-            "imageFileName": "images/bread.webp",
+            "name": "Lowe's Home Improvement",
+            "address": "242 North 1200 East",
+            "city": "Lehi, UT 84043",
+            "phone": "801-768-6020",
+            "url": "www.lowes.com",
+            "imageFileName": "images/hammer.webp",
             "membershipLevel": 1
         },
         {
-            "name": "Nice Ice",
-            "address": "1415 North 2100 East Lehi, UT 84043",
-            "phone": "888-111-3456",
-            "url": "https://elbon-eastmage.github.io/wdd231/",
-            "imageFileName": "images/ice.webp",
+            "name": "Lehi Mills",
+            "address": "833 East Main Street",
+            "city": "Lehi, UT 84043",
+            "phone": "877-311-3566",
+            "url": "lehimills.com",
+            "imageFileName": "images/mill.webp",
             "membershipLevel": 1
-        },
-        {
-            "name": "Beehive Bay",
-            "address": "1415 North 2100 East Lehi, UT 84043",
-            "phone": "888-111-3456",
-            "url": "https://elbon-eastmage.github.io/wdd231/",
-            "imageFileName": "images/beehive.webp",
-            "membershipLevel": 3
         }
     ]
 }
