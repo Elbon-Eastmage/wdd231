@@ -22,6 +22,7 @@ body.dark {
 button {
     font-family: "Cormorant", serif;
     font-weight: 700;
+    cursor: pointer;
 }
 
 nav ul {
@@ -30,10 +31,6 @@ nav ul {
 
 nav a {
     text-decoration: none;
-}
-
-button {
-    cursor: pointer;
 }
 
 .symbol-button {
