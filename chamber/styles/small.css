@@ -1,32 +1,52 @@
 :root {
     --primary-color: #ff8c00;
     --secondary-color: #0000cd;
-}
-
-html {
-    height: 100%;
+    --light-text-color: #fff;
+    --light-link-color: #e0ffff;
+    --control-text-color: #ffd700;
+    --light-section-color: #fffaad;
+    --dark-section-color: #8c0000;
+    --gutter: 0.5rem;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    background-color: #fffff0;
-    font-family: "Charis SIL", serif;
+    font-family: "Gabriela", serif;
+    background-color: #ffda73;
 }
 
-.assistive-text {
-    display: none;
+body.dark {
+    background-color: #000070;
+    color: var(--light-text-color);
+}
+
+button {
+    font-family: "Cormorant", serif;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 .symbol-button {
     background: none;
     border: none;
-    cursor: pointer;
 }
 
 .emphasize {
     font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /*
@@ -39,78 +59,113 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: auto 48px 48px;
-    padding: 0.5rem;
-    background-color: #ffebcd;
-}
-
-header div {
-    display: flex;
+    grid-template-columns: 48px auto 48px 48px;
     align-items: center;
+    padding: 1rem var(--gutter);
+    padding-bottom: 1.1rem;
+    border: 3px solid var(--secondary-color);
+    border-top: none;
+    font-family: "Cormorant", serif;
+    font-weight: 700;
+    background-color: var(--light-section-color);
 }
 
-header p {
+header.dark {
+    border: 3px solid var(--control-text-color);
+    border-top: none;
+    background-color: var(--dark-section-color);
+}
+
+header span {
     padding-left: 8px;
     font-size: 1.5rem;
 }
 
+header.dark span {
+    color: var(--light-text-color);
+}
+
+header nav {
+    display: none;
+    grid-row: 2;
+    grid-column: 4;
+}
+
+header nav.show {
+    display: block;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 header a {
-    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0.67rem 0;
+    font-size: 1.7rem;
+}
+
+header a,
+#theme-button,
+#hamburger {
     color: var(--secondary-color);
 }
 
-header a:hover {
+header a:hover,
+#theme-button:hover,
+#hamburger:hover {
     color: var(--primary-color);
 }
 
-nav ul {
-    list-style-type: none;
+header.dark a,
+#theme-button.dark,
+#hamburger.dark {
+    color: var(--control-text-color);
 }
 
-nav a {
-    text-decoration: none;
+header.dark a:hover,
+#theme-button.dark:hover,
+#hamburger.dark:hover {
+    color: var(--light-text-color);
 }
 
 .wayfinder {
     text-decoration: underline;
 }
 
-#main-nav {
-    display: none;
+#theme-button {
+    margin-bottom: 0.25rem;
+    font-size: 2.5rem;
 }
 
-#main-nav.show {
-    display: block;
-    grid-row: 2;
+#theme-button.dark {
+    margin-bottom: 0;
 }
 
-#sky {
-    padding-left: 1rem;
-    font-size: 3rem;
-    color: var(--primary-color);
-}
-
-#sky:hover {
-    color: var(--secondary-color);
-}
-
-#sky::before {
-    content: "☀";
-}
-
-#sky.dark::before {
+#theme-button::before {
     content: "⏾";
 }
 
+#theme-button.dark::before {
+    content: "☀";
+}
+
 #hamburger {
+    margin-bottom: 0.2rem;
     font-size: 2.25rem;
 }
 
-#hamburger::before {
+#hamburger:before {
     content: "\2630";
 }
 
-#hamburger.show::before {
+#hamburger.show {
+    font-size: 3rem;
+}
+
+#hamburger.show:before {
     content: "X";
 }
 
@@ -122,42 +177,111 @@ nav a {
 #   #   # #    # ##### #    ##
 */
 
-main {
-    flex: 1;
-    padding: 0.5rem;
+h1 {
+    padding: 1rem var(--gutter);
+    font-size: 1.75rem;
+    font-weight: 400;
 }
 
-.view-buttons {
-    margin: 2.5rem 0;
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.control-section {
     text-align: center;
 }
 
-.view-buttons button {
-    margin-right: 1rem;
-    padding: 0.25rem 1rem;
-    font-size: 1.25rem;
-    background-color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
-    cursor: pointer;
+.control-section button {
+    margin: 1rem 1rem;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.75rem;
+    border: 3px solid var(--secondary-color);
+    border-radius: 16px;
+    background-color: var(--light-section-color);
+    color: var(--secondary-color);
 }
 
-.view-buttons button:hover {
+.control-section button:hover {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: var(--control-text-color);
 }
 
-.list h2 {
-    font-size: 1rem;
+.control-section.dark button {
+    border: 3px solid var(--control-text-color);
+    background-color: var(--dark-section-color);
+    color: var(--control-text-color);
 }
 
-.entry {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-shadow: 0 0 4px #888;
+.control-section.dark button:hover {
+    border: 3px solid var(--light-text-color);
+    background-color: var(--control-text-color);
+    color: var(--secondary-color);
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+}
+
+.line p {
+    padding: 0.5rem 0;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem 0;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--light-section-color);
+    box-shadow: 0 0 8px #000;
+}
+
+.card img {
+    margin-top: 1rem;
+}
+
+.card div {
+    padding: 1rem 0.5rem;
+    text-align: left;
+}
+
+.card p {
+    padding: 0.25rem 0;
+}
+
+#membership-area {
+    padding: 2rem 0;
+    font-family: "Gabriela", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#membership-area a {
+    color: var(--secondary-color);
+}
+
+#membership-area.dark a {
+    color: var(--light-link-color);
+}
+
+#membership-area .stripe {
+    background-color: var(--light-section-color);
+}
+
+#membership-area.dark .stripe {
+    background-color: var(--dark-section-color);
+}
+
+#membership-area.grid {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background-color: #fff;
+}
+
+#membership-area.dark .card {
+    border: 2px solid var(--control-text-color);
+    background-color: var(--dark-section-color);
 }
 
 /*
@@ -172,8 +296,20 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: #ffebcd;
+    padding: 1rem var(--gutter);
+    border: 3px solid var(--secondary-color);
+    border-bottom: none;
+    background-color: var(--light-section-color);
+}
+
+footer.dark {
+    border: 3px solid var(--control-text-color);
+    border-bottom: none;
+    background-color: var(--dark-section-color);
+}
+
+footer p {
+    font-size: 1.1rem;
 }
 
 footer ul {

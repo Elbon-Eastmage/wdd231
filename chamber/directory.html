@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Lehi Chamber of Commerce Directory</title>
+    <title>Membership Directory of the Lehi Chamber of Commerce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Elbert John Eastmond">
-    <meta name="description" content="See the organizations part of the Lehi Chamber of Commerce.">
-    <meta property="og:title" content="Lehi Chamber of Commerce Directory List of Companies">
-    <meta property="og:description" content="See the organizations part of the Lehi Chamber of Commerce.">
-    <meta property="og:image" content="https://elbon-eastmage.github.io/wdd231/chamber/images/directory-preview.webp">
+    <meta name="description" content="Get information on all companies that make up the Lehi Chamber of Commerce.">
+    <meta property="og:title" content="Membership Directory of the Lehi Chamber of Commerce">
+    <meta property="og:description"
+        content="Get information on all companies that make up the Lehi Chamber of Commerce.">
+    <meta property="og:image"
+        content="https://elbon-eastmage.github.io/wdd231/chamber/images/preview.webp">
     <meta property="og:url" content="https://elbon-eastmage.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/reset.css">
@@ -16,24 +18,25 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Gabriela&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation-agent.js" defer></script>
+    <script src="scripts/theme-agent.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/data.js" defer></script>
+    <script type="module" src="scripts/membership-agent.mjs"></script>
 </head>
 <body>
     <header>
-        <div>
-            <img src="images/logo.webp" alt="honey flower" width="48" height="48">
-            <p>Lehi Chamber of Commerce</p>
-        </div>
-        <nav id="main-nav">
-            <ul id="main-nav-list">
+        <img src="images/logo.webp" alt="honey flower" width="48" height="48">
+        <span>Lehi Chamber of Commerce</span>
+        <nav>
+            <ul>
                 <li>
                     <a href="#">Home</a>
                 </li>
-                <li class="wayfinder">
-                    <a href="directory.html">Directory</a>
+                <li>
+                    <a class="wayfinder" href="directory.html">Directory</a>
                 </li>
                 <li>
                     <a href="#">Join</a>
@@ -43,30 +46,24 @@
                 </li>
             </ul>
         </nav>
-        <div>
-            <span id="sky-text" class="assistive-text">Toggle Dark Mode</span>
-            <button id="sky" class="symbol-button" aria-labelledby="sky-text"></button>
-
-            <span id="hamburger-text" class="assistive-text">Toggle Menu</span>
-            <button id="hamburger" class="symbol-button" aria-labelledby="hamburger-text"></button>
-        </div>
+        <button id="theme-button" class="symbol-button" aria-label="Toggle Dark Mode"></button>
+        <button id="hamburger" class="symbol-button" aria-label="Open Navigation Menu"></button>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="view-buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <h1>Membership Directory</h1>
+        <div class="control-section">
+            <button id="grid-button">Grid</button>
+            <button id="list-button">List</button>
         </div>
-        <div id="entries"></div>
+        <div id="membership-area" class="list"></div>
     </main>
     <footer>
-        <p>
-            <span class="emphasize">Lehi Chamber of Commerce</span><br>
-            131 North 100 East<br>
-            Lehi, Utah 84043<br>
-            contact@wdd231.net<br>
-            (385) 201-1000
-        </p>
+        <div>
+            <p class="emphasize">Lehi Chamber of Commerce</p>
+            <p>131 North 100 East<br>Lehi, Utah 84043</p>
+            <p>contact@wdd231.net</p>
+            <p>385-201-1000</p>
+        </div>
         <nav>
             <ul>
                 <li>
@@ -76,7 +73,7 @@
                 </li>
                 <li>
                     <a href="https://github.com/Elbon-Eastmage" target="_blank">
-                        <img src="images/github.svg" alt="YouTube" width="49" height="48">
+                        <img src="images/github.svg" alt="GitHub" width="49" height="48">
                     </a>
                 </li>
                 <li>
@@ -86,12 +83,12 @@
                 </li>
             </ul>
         </nav>
-        <p>
-            WDD231 Class Project<br>
-            Elbert John Eastmond<br>
-            <span id="copyright"></span> Lehi Chamber of Commerce<br>
-            Last Modification: <span id="last-modified"></span>
-        </p>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Elbert John Eastmond</p>
+            <p><span id="copyright"></span> Lehi Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
     </footer>
 </body>
 </html>

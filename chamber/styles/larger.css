@@ -1,52 +1,59 @@
 @media screen and (min-width: 900px) {
+    body {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.5rem 20%;
-        background-color: #ffebcd;
+        grid-template-columns: 48px auto 1fr 4fr 48px;
+        padding: 1rem var(--gutter);
     }
 
-    header a {
-        padding: 0 0.5rem;
-        font-size: 1.2rem;
+    header span {
+        font-size: 1.9rem;
     }
 
-    #main-nav {
+    header nav {
         display: block;
+        grid-row: 1;
+        grid-column: 4;
     }
 
-    #main-nav-list {
+    header ul {
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header button {
+        grid-column: 5;
     }
 
     #hamburger {
         display: none;
     }
 
-    main {
-        padding: 0.5rem 20%;
+    h1 {
+        font-size: 3rem;
     }
 
-    .view-buttons {
-        margin-top: 1rem;
+    .line {
+        display: grid;
+        grid-template-columns: 0.9fr 1fr 0.75fr 1.25fr;
+        padding: 0.75rem;
     }
 
-    .cards {
+    .line p {
+        padding: 0;
+    }
+
+    #membership-area.grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1rem;
-        justify-content: center;
-    }
-
-    .list .entry {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     footer {
-        padding: 0.5rem 20%;
+        padding: 0.5rem var(--gutter);
         flex-direction: row;
         justify-content: space-between;
     }
