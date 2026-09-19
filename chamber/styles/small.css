@@ -3,9 +3,10 @@
     --secondary-color: #0000cd;
     --light-text-color: #fff;
     --light-link-color: #e0ffff;
-    --control-text-color: #ffd700;
-    --light-section-color: #fffaad;
+    --contrast-color: #ffd700;
+    --light-section-color: #fffa9d;
     --dark-section-color: #8c0000;
+    --dark-outline-color: #000;
     --gutter: 0.5rem;
 }
 
@@ -68,7 +69,7 @@ header {
 }
 
 header.dark {
-    border: 3px solid var(--control-text-color);
+    border: 3px solid var(--contrast-color);
     border-top: none;
     background-color: var(--dark-section-color);
 }
@@ -118,13 +119,13 @@ header a:hover,
 
 header.dark a,
 #theme-button.dark,
-#hamburger.dark {
-    color: var(--control-text-color);
+header.dark #hamburger {
+    color: var(--contrast-color);
 }
 
 header.dark a:hover,
 #theme-button.dark:hover,
-#hamburger.dark:hover {
+header.dark #hamburger:hover {
     color: var(--light-text-color);
 }
 
@@ -135,10 +136,6 @@ header.dark a:hover,
 #theme-button {
     margin-bottom: 0.25rem;
     font-size: 2.5rem;
-}
-
-#theme-button.dark {
-    margin-bottom: 0;
 }
 
 #theme-button::before {
@@ -189,7 +186,7 @@ h2 {
     text-align: center;
 }
 
-.control-section button {
+main button {
     margin: 1rem 1rem;
     padding: 0.5rem 1.25rem;
     font-size: 1.75rem;
@@ -199,21 +196,97 @@ h2 {
     color: var(--secondary-color);
 }
 
-.control-section button:hover {
+main button:hover {
     background-color: var(--secondary-color);
-    color: var(--control-text-color);
+    color: var(--contrast-color);
 }
 
-.control-section.dark button {
-    border: 3px solid var(--control-text-color);
+main.dark button {
+    border: 3px solid var(--contrast-color);
     background-color: var(--dark-section-color);
-    color: var(--control-text-color);
+    color: var(--contrast-color);
 }
 
-.control-section.dark button:hover {
+main.dark button:hover {
     border: 3px solid var(--light-text-color);
-    background-color: var(--control-text-color);
+    background-color: var(--contrast-color);
     color: var(--secondary-color);
+}
+
+main a {
+    color: var(--secondary-color);
+}
+
+main.dark a {
+    color: var(--light-link-color);
+}
+
+main .stripe {
+    background-color: var(--light-section-color);
+}
+
+main.dark .stripe {
+    background-color: var(--dark-section-color);
+}
+
+main.dark .card {
+    border: 2px solid var(--contrast-color);
+    background-color: var(--dark-section-color);
+}
+
+.hero-area {
+    position: relative;
+    padding: 0 0.5rem;
+}
+
+.overlay {
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: rgb(255 250 157 / 0.64);
+}
+
+.overlay:hover {
+    background-color: rgb(0 0 205 / 0.75);
+    color: var(--contrast-color);
+}
+
+main.dark .overlay {
+    background-color: rgb(0 0 205 / 0.7);
+    color: var(--contrast-color);
+}
+
+main.dark .overlay:hover {
+    background-color: rgb(255 215 0 / 0.7);
+    color: var(--secondary-color);
+}
+
+.hero-area .overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 8%;
+    padding: 0.5rem 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border: 4px solid var(--dark-outline-color);
+    box-shadow: 0 0 16px var(--dark-outline-color);
+}
+
+main.dark .hero-image {
+    border: 4px solid var(--light-text-color);
+    box-shadow: 0 0 8px var(--light-text-color);
+}
+
+.description {
+    padding: 1rem var(--gutter);
+    font-size: 1.5rem;
+}
+
+.little-line {
+    font-size: 1.1rem;
 }
 
 .line {
@@ -229,9 +302,10 @@ h2 {
 .card {
     margin: 1rem;
     padding: 1rem 0;
+    text-align: center;
     border: 2px solid var(--secondary-color);
     background-color: var(--light-section-color);
-    box-shadow: 0 0 8px #000;
+    box-shadow: 0 0 8px var(--dark-outline-color);
 }
 
 .card img {
@@ -247,6 +321,11 @@ h2 {
     padding: 0.25rem 0;
 }
 
+.tidbits {
+    display: flex;
+    flex-direction: column;
+}
+
 #membership-area {
     padding: 2rem 0;
     font-family: "Gabriela", serif;
@@ -254,31 +333,23 @@ h2 {
     font-weight: 500;
 }
 
-#membership-area a {
-    color: var(--secondary-color);
-}
-
-#membership-area.dark a {
-    color: var(--light-link-color);
-}
-
-#membership-area .stripe {
-    background-color: var(--light-section-color);
-}
-
-#membership-area.dark .stripe {
-    background-color: var(--dark-section-color);
-}
-
 #membership-area.grid {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
-#membership-area.dark .card {
-    border: 2px solid var(--control-text-color);
-    background-color: var(--dark-section-color);
+#spotlight {
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 8px var(--dark-outline-color);
+}
+
+main.dark #spotlight {
+    border: 2px solid var(--contrast-color);
+}
+
+#spotlight h2 {
+    margin-top: 0.5rem;
+    text-align: center;
 }
 
 /*
@@ -300,7 +371,7 @@ footer {
 }
 
 footer.dark {
-    border: 3px solid var(--control-text-color);
+    border: 3px solid var(--contrast-color);
     border-bottom: none;
     background-color: var(--dark-section-color);
 }

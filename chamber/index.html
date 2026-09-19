@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Membership Directory of the Lehi Chamber of Commerce</title>
+    <title>Lehi Chamber of Commerce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Elbert John Eastmond">
-    <meta name="description" content="Get information on all companies that make up the Lehi Chamber of Commerce.">
-    <meta property="og:title" content="Membership Directory of the Lehi Chamber of Commerce">
+    <meta name="description"
+        content="The Lehi Chamber of Commerce helps companies in the city of Lehi work and grow together.">
+    <meta property="og:title" content="Lehi Chamber of Commerce">
     <meta property="og:description"
-        content="Get information on all companies that make up the Lehi Chamber of Commerce.">
-    <meta property="og:image"
-        content="https://elbon-eastmage.github.io/wdd231/chamber/images/preview.webp">
-    <meta property="og:url" content="https://elbon-eastmage.github.io/wdd231/chamber/directory.html">
+        content="The Lehi Chamber of Commerce helps companies in the city of Lehi work and grow together.">
+    <meta property="og:image" content="https://elbon-eastmage.github.io/wdd231/chamber/images/preview.webp">
+    <meta property="og:url" content="https://elbon-eastmage.github.io/wdd231/chamber/index.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -24,7 +24,8 @@
     <script src="scripts/navigation-agent.js" defer></script>
     <script src="scripts/theme-agent.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script type="module" src="scripts/membership-agent.mjs"></script>
+    <script type="module" src="scripts/weather-agent.mjs"></script>
+    <script type="module" src="scripts/spotlight-agent.mjs"></script>
 </head>
 <body>
     <header>
@@ -33,10 +34,10 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a class="wayfinder" href="index.html">Home</a>
                 </li>
                 <li>
-                    <a class="wayfinder" href="directory.html">Directory</a>
+                    <a href="directory.html">Directory</a>
                 </li>
                 <li>
                     <a href="#">Join</a>
@@ -50,12 +51,47 @@
         <button id="hamburger" class="symbol-button" aria-label="Open Navigation Menu"></button>
     </header>
     <main>
-        <h1>Membership Directory</h1>
-        <div class="control-section">
-            <button id="grid-button">Grid</button>
-            <button id="list-button">List</button>
+        <h1>Home</h1>
+        <div class="hero-area">
+            <picture>
+                <source srcset="images/beehive-d3.webp" media="(min-width: 620px)">
+                <source srcset="images/beehive-d2.webp" media="(min-width: 401px)">
+                <img class="hero-image" src="images/beehive-d1.webp" alt="beehive" width="400" height="234">
+            </picture>
+            <a class="overlay" href="#">Become a part of our hive!</a>
         </div>
-        <div id="membership-area" class="list"></div>
+        <p class="description">
+            Like a beehive, the Lehi Chamber of Commerce promotes unity and hard work. We provide a
+            link between companies and the city government of Lehi. People wanting to start new
+            companies can get a plethora of resources from us, and even established companies will
+            gain opportunities and knowledge.
+        </p>
+        <p class="description">
+            The Lehi Chamber of Commerce is not just an organization. It is a fellowship.
+        </p>
+        <div class="tidbits">
+            <section class="card">
+                <h2>Current Events</h2>
+                <div>
+                    <p class="description">How to Grow a Company Seminar - 21 September 2026 at 13:00</p>
+                    <p class="description">Quarterly Meeting - 1 October 2026 at 10:00</p>
+                    <p class="description">New Company Orientation - 17 November 2026 at 16:00</p>
+                </div>
+            </section>
+            <section id="weather" class="card">
+                <h2>Lehi Weather</h2>
+                <div>
+                    <p class="description">Current Temperature: <span id="temperature"></span> &deg;F</p>
+                    <p class="description">Current Weather: <span id="weather-description"></span></p>
+                    <p class="description underline">Temperature Forecast</p>
+                    <div id="temperature-forecast"></div>
+                </div>
+            </section>
+            <section id="spotlight">
+                <h2>Company Spotlights</h2>
+                <div id="company-area"></div>
+            </section>
+        </div>
     </main>
     <footer>
         <div>
