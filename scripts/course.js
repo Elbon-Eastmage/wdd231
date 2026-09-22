@@ -84,7 +84,16 @@ const cseButton = document.querySelector("#cse");
 const wddButton = document.querySelector("#wdd");
 const courseCredits = document.querySelector("#course-credits");
 
-displayCourses(courses);
+const dialog = document.querySelector("dialog");
+const courseCode = document.querySelector("#course-code");
+const title = document.querySelector("#title");
+const credits = document.querySelector("#credits");
+const certificate = document.querySelector("#certificate");
+const description = document.querySelector("#description");
+const technology = document.querySelector("#technology");
+const closeButton = document.querySelector("#close-button");
+
+closeButton.addEventListener("click", () => dialog.close());
 
 allButton.addEventListener("click", () => displayCourses(courses));
 
@@ -97,6 +106,9 @@ wddButton.addEventListener("click", () => {
     const wddCourses = courses.filter((course) => course.subject == "WDD");
     displayCourses(wddCourses);
 });
+
+displayCourses(courses);
+
 
 function displayCourses(courses) {
     courseContainer.innerHTML = "";
@@ -113,8 +125,30 @@ function displayCourses(courses) {
             courseParagraph.innerHTML = `${course.subject} ${course.number}`;
         }
 
+        courseParagraph.addEventListener("click", () => displayModal(course));
         courseContainer.appendChild(courseParagraph);
     }
 
     courseCredits.innerHTML = courses.reduce((total, course) => total + course.credits, 0);
+}
+
+function displayModal(course) {
+    courseCode.innerHTML = `${course.subject} ${course.number}`;
+    title.innerHTML = course.title;
+    credits.innerHTML = `${course.credits} credits`;
+    certificate.innerHTML = `Certificate: ${course.certificate}`;
+    description.innerHTML = course.description;
+    technology.innerHTML = "Technology: ";
+
+    if (course.technology.length == 1) {
+        technology.innerHTML += course.technology[0];
+    }
+    else if (course.technology.length == 2) {
+        technology.innerHTML += `${course.technology[0]} and ${course.technology[1]}`;
+    }
+    else {
+        technology.innerHTML += `${course.technology[0]}, ${course.technology[1]}, and ${course.technology[2]}`;
+    }
+
+    dialog.showModal();
 }

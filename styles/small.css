@@ -124,6 +124,42 @@ p {
     font-size: 1.25rem;
 }
 
+dialog {
+    box-shadow: 0 0 10px #000;
+}
+
+dialog div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    background-color: #fff8dc;
+}
+
+#course-code {
+    font-size: 1.5rem;
+    grid-column: 1;
+}
+
+#close-button {
+    background: none;
+    font-size: 3rem;
+    color: #ff0000;
+    grid-column: 3;
+}
+
+#close-button:hover {
+    background-color: #fff;
+}
+
+::backdrop {
+    background-color: rgb(255 248 220 / 0.5);
+}
+
+#course-data {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
 .visual-text section {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
@@ -157,6 +193,12 @@ p {
     border: 1px solid #eee;
     padding: 1rem;
     background-color: #fff8dc;
+    cursor: pointer;
+}
+
+.course:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .complete {
