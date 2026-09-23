@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+.gear-container {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 0 2rem rgb(0 0 255 / 40%);
+}
+
+.gear {
+    margin-top: 0.6rem;
+}
+
+#infinite-motion {
+    animation: rotate 1.5s linear infinite;
+}
+
+#infinite-motion .gear {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+#responsive-motion {
+    transition: rotate 1.5s linear;
+}
+
+#responsive-motion:hover {
+    rotate: 360deg;
+}
+
+#responsive-motion .gear {
+    transform: scale(0);
+    transition: transform 1.5s ease-in-out;
+}
+
+#responsive-motion:hover .gear {
+    transform: scale(2);
+}
