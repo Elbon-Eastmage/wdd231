@@ -7,7 +7,7 @@
             "phone": "801-768-9544",
             "url": "www.lehibakery.com",
             "imageFileName": "images/doughnut.webp",
-            "imageText": "doughnut",
+            "imageText": "chocolate doughnut",
             "membershipLevel": 3
         },
         {
@@ -17,7 +17,7 @@
             "phone": "385-352-7544",
             "url": "www.dragonskeep.com",
             "imageFileName": "images/fire.webp",
-            "imageText": "fire",
+            "imageText": "campfire with orange and white colors",
             "membershipLevel": 3
         },
         {
@@ -27,7 +27,7 @@
             "phone": "801-653-2700",
             "url": "www.costco.com",
             "imageFileName": "images/basket.webp",
-            "imageText": "basket",
+            "imageText": "apples in basket",
             "membershipLevel": 2
         },
         {
@@ -37,7 +37,7 @@
             "phone": "385-336-7867",
             "url": "www.dollartree.com",
             "imageFileName": "images/tree.webp",
-            "imageText": "tree",
+            "imageText": "lush green tree",
             "membershipLevel": 1
         },
         {
@@ -47,7 +47,7 @@
             "phone": "801-768-3578",
             "url": "www.pioneermarketlehi.com",
             "imageFileName": "images/handcart.webp",
-            "imageText": "handcart",
+            "imageText": "wooden handcart",
             "membershipLevel": 2
         },
         {
@@ -57,7 +57,7 @@
             "phone": "801-768-6020",
             "url": "www.lowes.com",
             "imageFileName": "images/hammer.webp",
-            "imageText": "hammer",
+            "imageText": "hammer on wood surface",
             "membershipLevel": 2
         },
         {
@@ -67,7 +67,7 @@
             "phone": "877-311-3566",
             "url": "lehimills.com",
             "imageFileName": "images/mill.webp",
-            "imageText": "mill",
+            "imageText": "white mill",
             "membershipLevel": 1
         }
     ]
