@@ -186,7 +186,8 @@ h2 {
     text-align: center;
 }
 
-main button {
+main button,
+.action-button {
     margin: 1rem 1rem;
     padding: 0.5rem 1.25rem;
     font-size: 1.75rem;
@@ -196,18 +197,21 @@ main button {
     color: var(--secondary-color);
 }
 
-main button:hover {
+main button:hover,
+.action-button:hover {
     background-color: var(--secondary-color);
     color: var(--contrast-color);
 }
 
-main.dark button {
+main.dark button,
+main.dark .action-button {
     border: 3px solid var(--contrast-color);
     background-color: var(--dark-section-color);
     color: var(--contrast-color);
 }
 
-main.dark button:hover {
+main.dark button:hover,
+main.dark .action-button:hover {
     border: 3px solid var(--light-text-color);
     background-color: var(--contrast-color);
     color: var(--secondary-color);
@@ -232,6 +236,26 @@ main.dark .stripe {
 main.dark .card {
     border: 2px solid var(--contrast-color);
     background-color: var(--dark-section-color);
+}
+
+form {
+    padding: 0 var(--gutter);
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input {
+    display: block;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--light-section-color);
+}
+
+.action-button {
+    cursor: pointer;
 }
 
 .hero-area {
