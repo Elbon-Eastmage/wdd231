@@ -7,7 +7,21 @@
     --light-section-color: #fffa9d;
     --dark-section-color: #8c0000;
     --dark-outline-color: #000;
+    --error-color: #ff0000;
+    --valid-color: #008000;
     --gutter: 0.5rem;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 body {
@@ -239,22 +253,150 @@ main.dark .card {
 }
 
 form {
+    display: inline-block;
     padding: 0 var(--gutter);
+}
+
+fieldset {
+    margin-bottom: 2rem;
+    padding: var(--gutter);
+    border: 2px solid var(--secondary-color);
+}
+
+main.dark fieldset {
+    border: 2px solid var(--contrast-color);
+}
+
+fieldset legend {
+    text-align: center;
 }
 
 label {
     font-size: 1.2rem;
 }
 
-input {
+input,
+select,
+textarea {
     display: block;
+    width: 18rem;
     margin-top: 0.1rem;
     margin-bottom: 1rem;
+    padding-left: 0.1rem;
+    border: 2px solid var(--secondary-color);
+    font-family: "Cormorant", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--light-section-color);
+}
+
+main.dark input,
+main.dark select,
+main.dark textarea {
+    border: 2px solid var(--contrast-color);
+    color: var(--contrast-color);
+    background-color: var(--dark-section-color);
+}
+
+main.dark input::placeholder {
+    color: #ffd90098;
+    font-weight: 700;
+}
+
+textarea {
+    height: 10rem;
+}
+
+option {
+    font-weight: 700;
+}
+
+dialog {
+    margin: auto;
+    padding: 0 var(--gutter) 1rem;
     font-size: 1.5rem;
     background-color: var(--light-section-color);
 }
 
+main.dark dialog {
+    border: 2px solid var(--contrast-color);
+    color: var(--light-text-color);
+    background-color: var(--dark-section-color);
+}
+
+dialog div {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+
+main.dark dialog div {
+    border-bottom: 2px solid var(--contrast-color);
+}
+
+dialog p {
+    padding: 1rem 0 0 0;
+}
+
+dialog ul {
+    padding-left: 2rem;
+    font-size: 1.25rem;
+}
+
+.two-sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-heading {
+    margin: 0 0 1rem var(--gutter);
+}
+
+.level {
+    width: 18rem;
+    height: 10rem;
+    margin: 0 0 1.75rem var(--gutter);
+    border: 2px solid var(--secondary-color);
+    border-radius: 3rem;
+    text-align: center;
+    background-color: var(--light-section-color);
+    animation: slideIn 0.75s linear;
+}
+
+main.dark .level {
+    border: 2px solid var(--contrast-color);
+    background-color: var(--dark-section-color);
+}
+
+.level h3 {
+    margin: 1rem 0;
+}
+
+.card-button {
+    font-size: 1.5rem;
+    color: var(--light-text-color);
+    background-color: var(--secondary-color);
+}
+
+.card-button:hover {
+    color: var(--secondary-color);
+    background-color: var(--light-text-color);
+}
+
+main.dark .card-button {
+    color: var(--secondary-color);
+    background-color: var(--contrast-color);
+}
+
+main.dark .card-button:hover {
+    border: 3px solid var(--contrast-color);
+    color: var(--contrast-color);
+    background-color: var(--secondary-color);
+}
+
 .action-button {
+    margin: 2rem 0;
     cursor: pointer;
 }
 
@@ -348,6 +490,12 @@ main.dark .hero-image {
 .tidbits {
     display: flex;
     flex-direction: column;
+}
+
+.information {
+    margin-bottom: 2rem;
+    font-family: "Cormorant", serif;
+    font-weight: 600;
 }
 
 #membership-area {

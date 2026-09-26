@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Join the Lehi Chamber of Commerce</title>
+    <title>Join the Chamber of Commerce in the City of Lehi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Elbert John Eastmond">
     <meta name="description"
         content="Learn about the different membership perks of the Lehi Chamber of Commerce and become a member yourself.">
-    <meta property="og:title" content="Join the Lehi Chamber of Commerce">
+    <meta property="og:title" content="Join the Chamber of Commerce in the City of Lehi">
     <meta property="og:description"
         content="Learn about the different membership perks of the Lehi Chamber of Commerce and become a member yourself.">
     <meta property="og:image" content="https://elbon-eastmage.github.io/wdd231/chamber/images/preview.webp">
@@ -21,6 +21,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Gabriela&display=swap"
         rel="stylesheet">
+    <script type="module" src="scripts/level-agent.mjs"></script>
+    <script src="scripts/timestamp.js" defer></script>
     <script src="scripts/navigation-agent.js" defer></script>
     <script src="scripts/theme-agent.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -50,24 +52,97 @@
     </header>
     <main>
         <h1>Join the Chamber</h1>
-        <form method="get" action="thankyou.html">
-            <label>
-                First Name
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name" title="Your given name."
-                    required>
-            </label>
-            <label>
-                Last Name
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name" title="Your family name."
-                    required>
-            </label>
-            <label>
-                Organization Title
-                <input type="text" name="title" id="title" autocomplete="organization-title"
-                    title="The title you have in your company." required pattern="[A-Za-z\s-]{7,}">
-            </label>
-            <input class="action-button" type="submit" value="Become a Member">
-        </form>
+        <div class="two-sections">
+            <div>
+                <h2 class="column-heading">Membership Form</h2>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Name</legend>
+                        <label>
+                            First Name*
+                            <input type="text" name="first-name" id="first-name" required autocomplete="given-name"
+                                title="Your given name.">
+                        </label>
+                        <label>
+                            Last Name*
+                            <input type="text" name="last-name" id="last-name" required autocomplete="family-name"
+                                title="Your family name.">
+                        </label>
+                        <label>
+                            Organizational Title*
+                            <input type="text" name="title" required autocomplete="organization-title"
+                                title="Must be at least 7 characters long with no numbers or special characters (except a space or hyphen)."
+                                pattern="[A-Za-z \-]{7,}">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label>
+                            Email*
+                            <input type="email" name="user-email" required autocomplete="email"
+                                title="Your company email." placeholder="you@gmail.com">
+                        </label>
+                        <label>
+                            Mobile Phone Number*
+                            <input type="tel" name="user-phone" required autocomplete="tel"
+                                title="A phone number that can be used to reach you.">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Organization Information</legend>
+                        <label>
+                            Organization Name*
+                            <input type="text" name="company-name" required autocomplete="organization"
+                                title="The name of your company.">
+                        </label>
+                        <label>
+                            Organization Description
+                            <textarea name="company-description" title="Describe what your company does."></textarea>
+                        </label>
+                    </fieldset>
+                    <label>
+                        Membership Level*
+                        <select name="membership" id="membership" required>
+                            <option value="" disabled selected>...</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input class="action-button" type="submit" value="Become a Member">
+                </form>
+            </div>
+            <div>
+                <h2 class="column-heading">Membership Levels</h2>
+                <div class="level">
+                    <h3>Nonprofit Level</h3>
+                    <button id="nonprofit-button" class="card-button">Learn More</button>
+                </div>
+                <div class="level">
+                    <h3>Bronze Level</h3>
+                    <button id="bronze-button" class="card-button">Learn More</button>
+                </div>
+                <div class="level">
+                    <h3>Silver Level</h3>
+                    <button id="silver-button" class="card-button">Learn More</button>
+                </div>
+                <div class="level">
+                    <h3>Gold Level</h3>
+                    <button id="gold-button" class="card-button">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <dialog>
+            <div>
+                <h2></h2>
+                <button class="card-button">X</button>
+            </div>
+            <p class="cost emphasize"></p>
+            <p class="underline emphasize">Benefits</p>
+            <ul></ul>
+        </dialog>
     </main>
     <footer>
         <div>
