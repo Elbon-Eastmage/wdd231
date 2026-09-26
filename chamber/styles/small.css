@@ -7,8 +7,6 @@
     --light-section-color: #fffa9d;
     --dark-section-color: #8c0000;
     --dark-outline-color: #000;
-    --error-color: #ff0000;
-    --valid-color: #008000;
     --gutter: 0.5rem;
 }
 
@@ -17,7 +15,7 @@
         opacity: 0;
         transform: translateY(100px);
     }
-    
+
     100% {
         opacity: 1;
         transform: translateY(0);
