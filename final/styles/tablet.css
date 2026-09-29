@@ -7,13 +7,13 @@
         font-size: 1.5rem;
     }
 
-    figcaption {
-        font-size: 1.25rem;
-    }
-
     .collection {
         flex-direction: row;
         justify-content: space-around;
         align-items: start;
+    }
+
+    .image-label {
+        font-size: 1.25rem;
     }
 }

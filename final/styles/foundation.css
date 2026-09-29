@@ -71,17 +71,17 @@ picture {
     margin-bottom: 1rem;
 }
 
-figcaption {
-    margin: 0.25rem 0;
-    font-size: 1rem;
-    text-align: center;
-}
-
 .collection {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem auto;
+}
+
+.image-label {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+    text-align: center;
 }
 
 footer {
