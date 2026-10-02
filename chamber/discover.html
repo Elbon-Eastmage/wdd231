@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Membership Directory of the Lehi Chamber of Commerce</title>
+    <title>Discover Interesting Sites in the City of Lehi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Elbert John Eastmond">
-    <meta name="description" content="Get information on all companies that make up the Lehi Chamber of Commerce.">
-    <meta property="og:title" content="Membership Directory of the Lehi Chamber of Commerce">
-    <meta property="og:description"
-        content="Get information on all companies that make up the Lehi Chamber of Commerce.">
+    <meta name="description" content="Discover many different places to explore within the city of Lehi.">
+    <meta property="og:title" content="Discover Interesting Sites in the City of Lehi">
+    <meta property="og:description" content="Discover many different places to explore within the city of Lehi.">
     <meta property="og:image" content="https://elbon-eastmage.github.io/wdd231/chamber/images/preview.webp">
-    <meta property="og:url" content="https://elbon-eastmage.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://elbon-eastmage.github.io/wdd231/chamber/index.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,8 @@
     <script src="scripts/navigation-agent.js" defer></script>
     <script src="scripts/theme-agent.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script type="module" src="scripts/membership-agent.mjs"></script>
+    <script src="scripts/visit-agent.js" defer></script>
+    <script type="module" src="scripts/place-agent.mjs"></script>
 </head>
 <body>
     <header>
@@ -35,13 +36,13 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a class="wayfinder" href="directory.html">Directory</a>
+                    <a href="directory.html">Directory</a>
                 </li>
                 <li>
                     <a href="join.html">Join</a>
                 </li>
                 <li>
-                    <a href="discover.html">Discover</a>
+                    <a class="wayfinder" href="discover.html">Discover</a>
                 </li>
             </ul>
         </nav>
@@ -49,12 +50,9 @@
         <button id="hamburger" class="symbol-button" aria-label="Open Navigation Menu"></button>
     </header>
     <main>
-        <h1>Membership Directory</h1>
-        <div class="control-section">
-            <button id="grid-button">Grid</button>
-            <button id="list-button">List</button>
-        </div>
-        <div id="membership-area" class="list"></div>
+        <h1>Discover Places in Lehi</h1>
+        <p id="welcome-message" class="description"></p>
+        <div class="grid-area"></div>
     </main>
     <footer>
         <div>

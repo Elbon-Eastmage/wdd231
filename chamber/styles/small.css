@@ -485,6 +485,45 @@ main.dark .hero-image {
     padding: 0.25rem 0;
 }
 
+.grid-area .card {
+    display: grid;
+    grid-template-areas:
+    "name"
+    "image"
+    "description"
+    "address"
+    "button";
+    padding: 1rem;
+    text-align: left;
+}
+
+.grid-area h2 {
+    grid-area: name;
+}
+
+.grid-area figure {
+    grid-area: image;
+}
+
+.grid-area img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-area p {
+    padding: 1rem 0;
+    grid-area: description;
+}
+
+.grid-area address {
+    grid-area: address;
+}
+
+.grid-area div {
+    text-align: center;
+    grid-area: button;
+}
+
 .tidbits {
     display: flex;
     flex-direction: column;
