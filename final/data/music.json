@@ -1,0 +1,46 @@
+{
+    "music": [
+        {
+            "name": "Stellar Tracks",
+            "author": "MaxStack",
+            "license": "CC-BY-SA 3.0",
+            "fileName": "stellar-tracks.zip",
+            "description": "This is music that was made for a cancelled video game. The album was called Game-Game, but I chose to name it Stellar Tracks because I liked the music so much! I also get the feeling of a cosmic train going to different worlds."
+        },
+        {
+            "name": "Endgame: Singularity",
+            "author": "MaxStack",
+            "license": "CC-BY-SA 3.0",
+            "fileName": "endgame-singularity.zip",
+            "description": "This music combines strong melodies with an ominous feel. That is quite rare (I don't know why), but it works really well here."
+        },
+        {
+            "name": "Carnival Rides",
+            "author": "Écrivain",
+            "license": "CC0",
+            "fileName": "carnival-rides.ogg",
+            "description": "This is a short but fun track. It gives me the feeling of a fast minecart."
+        },
+        {
+            "name": "Telling a Tale",
+            "author": "Remaxim",
+            "license": "OGA-BY 3.0",
+            "fileName": "telling-a-tale.wav",
+            "description": "Another short track, this one evokes the atmosphere of a medieval campfire. It is quite compelling!"
+        },
+        {
+            "name": "Left and Right Excluded",
+            "author": "Matthew Klingensmith",
+            "license": "CC-BY 3.0",
+            "fileName": "left-and-right-excluded.mp3",
+            "description": "If jazz music was combined with a video game boss theme, this would be the result. It is both unusual and fun!"
+        },
+        {
+            "name": "Debugging",
+            "author": "Martin Linda",
+            "license": "CC-BY-SA 3.0",
+            "fileName": "debugging.ogg",
+            "description": "This music has two distinct stages. It gives me the feeling of a programmer working at high speed. I would have bought this if it was being sold!"
+        }
+    ]
+}
