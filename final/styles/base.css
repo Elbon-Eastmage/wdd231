@@ -163,6 +163,14 @@ dialog {
     background-color: rgb(245, 222, 179);
 }
 
+dialog h2 {
+    color: var(--dark-text-color);
+}
+
+dialog p {
+    color: var(--dark-text-color);
+}
+
 dialog div {
     display: grid;
     grid-template-columns: 5fr 1fr;
