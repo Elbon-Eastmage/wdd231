@@ -97,6 +97,13 @@
             "license": "CC-BY 3.0",
             "fileName": "mystical-caverns.ogg",
             "description": "I like how this music has a stronger melody compared to most cave tracks. It has a sense of both mystery and adventure."
+        },
+        {
+            "name": "Freelance",
+            "author": "MaxStack",
+            "license": "CC-BY-SA 3.0",
+            "fileName": "freelance.zip",
+            "description": "There are two tracks in here. BazaarNet is both magical and hopeful. The Client, on the other hand, is ominous. However, it is also catchy, which is unusual but works really well!"
         }
     ]
 }
