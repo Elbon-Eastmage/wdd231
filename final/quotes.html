@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Quality Quotes | Digital Dragon Domain</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elbert John Eastmond">
+    <meta name="description" content="Life is hard at times. Find quotes here that can inspire you.">
+    <meta property="og:title" content="Read Inspirational Quotes at Digital Dragon Domain">
+    <meta property="og:url" content="https://elbon-eastmage.github.io/wdd231/final/quotes.html">
+    <meta property="og:description" content="Life is hard at times. Find quotes here that can inspire you.">
+    <meta property="og:image" content="https://elbon-eastmage.github.io/wdd231/final/images/quote-preview.webp">
+    <meta name="twitter:title" content="Read Inspirational Quotes at Digital Dragon Domain">
+    <meta name="twitter:description" content="Life is hard at times. Find quotes here that can inspire you.">
+    <meta name="twitter:image" content="https://elbon-eastmage.github.io/wdd231/final/images/quote-preview.webp">
+    <meta name="twitter:url" content="https://elbon-eastmage.github.io/wdd231/final/quotes.html">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/foundation.css">
+    <link rel="stylesheet" href="styles/tablet.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Artifika&family=Gabriela&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/quote-dialog-agent.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/logo.webp" alt="Digital Dragon Domain logo" width="64" height="64">
+        </a>
+        <button id="hamburger" class="symbol-button" aria-label="navigation menu button"></button>
+        <nav id="main-nav">
+            <ul>
+                <li>
+                    <a class="header-link dark-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="header-link dark-link" href="music.html">Music</a>
+                </li>
+                <li>
+                    <a id="wayfinder" class="header-link dark-link" href="quotes.html">Quotes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Quality Quotes</h1>
+        <picture>
+            <source srcset="images/books-d3.webp" media="(min-width: 1024px)">
+            <source srcset="images/books-d2.webp" media="(min-width: 640px)">
+            <img class="responsive-image" src="images/books-d1.webp" alt="bundle of books" width="1920" height="1280"
+                loading="lazy">
+        </picture>
+        <p class="block">
+            Not all sentences are created equal. Some are nasty. Others are decent. And a few are
+            inspirational and uplifting.
+        </p>
+        <p class="block">
+            On this page, you will find quotes that fit in the third category. May they bring
+            light and hope to your life!
+        </p>
+        <div class="collection separate">
+            <p class="card">Art is the signature of civilization. - Beverly Sills</p>
+            <p class="card">
+                Nobody has ever measured, even the poets, how much a heart can hold. - Zelda
+                Fitzgerald
+            </p>
+            <p class="card">Remember the past to brighten the future. - John Eastmond</p>
+            <p class="card">
+                Character consists of what you do on the third and fourth tries. - James Michener
+            </p>
+            <p class="card">
+                Swing hard, in case they throw the ball where you are swinging. - Duke Snider
+            </p>
+            <p class="card">
+                What matters most is what lasts longest. - Sister Barbara Ballard
+            </p>
+            <p class="card">
+                I have learned to use the word impossible with the greatest caution. - Wernher von
+                Brown
+            </p>
+            <p class="card">You can't test courage cautiously. - Annie Dillard</p>
+            <p class="card">
+                If you judge people, you have no time to love them. - Mother Teresa
+            </p>
+            <p class="card">
+                Each new morning is a gift from God. - President Russell M. Nelson
+            </p>
+            <p class="card">
+                When we covenant all we are, we can become more than we are. - Elder Gerrit W. Gong
+            </p>
+            <p class="card">
+                There is no true freedom without responsibility. - President Boyd K. Packer
+            </p>
+            <p class="card">Jesus Christ is the answer for everyone. - Elder Massimo De Feo</p>
+            <p class="card">
+                Unusual times can bring unusual rewards. - President Russell M. Nelson
+            </p>
+            <p class="card">
+                Joy is our purpose, not the gift of our circumstances. - Elder Karl D. Hirst
+            </p>
+            <p class="card">When you have hope, you can do about anything. - Becky Eastmond</p>
+            <p class="card">Think celestial! - President Russell M. Nelson</p>
+        </div>
+        <div class="button-area">
+            <button id="quote-button" class="action-button">Add a Quote</button>
+        </div>
+        <dialog>
+            <div>
+                <h2>Custom Quote</h2>
+                <button class="close-button">X</button>
+            </div>
+            <p class="block">Have you collected quotes as well? You can store them using this form!</p>
+            <form method="get" action="custom-quotes.html">
+                <label>
+                    Quote*
+                    <textarea name="quote-text" required></textarea>
+                </label>
+                <label>
+                    Author*
+                    <input type="text" name="quote-author" required>
+                </label>
+                <input id="submit-button" type="submit" value="Save Quote">
+            </form>
+        </dialog>
+    </main>
+    <footer class="separate">
+        <p>© 2026 Elbert John Eastmond</p>
+        <p><a class="footer-link dark-link" href="references.html" target="_blank">References</a></p>
+    </footer>
+</body>
+</html>

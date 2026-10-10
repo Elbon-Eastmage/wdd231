@@ -1,11 +1,15 @@
 :root {
-    --primary-color: #7000da;
-    --secondary-color: #ffd700;
-    --light-text-color: #fff;
-    --dark-text-color: #0000ff;
-    --subtle-border: 4px solid #daa520;
-    --gutter: 0 0.5rem 0 0.5rem;
-    --vertical-chunk: 1rem;
+    --primary-color: rgb(112, 0, 218);
+    --translucent-primary-color: rgba(112, 0, 218, 0.75);
+    --secondary-color: rgb(255, 215, 0);
+    --translucent-secondary-color: rgba(255, 215, 0, 0.75);
+    --light-text-color: rgb(255, 255, 255);
+    --dark-text-color: rgb(0, 0, 0);
+    --contrast-color: rgb(0, 0, 255);
+    --subtle-border: 4px solid rgb(218, 165, 32);
+    --gutter: 0.5rem;
+    --vertical-space: 1rem;
+    --vertical-chunk: 4rem;
 }
 
 * {
@@ -14,80 +18,292 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0 var(--gutter);
     font-family: "Artifika", serif;
     color: var(--light-text-color);
     background-color: var(--primary-color);
 }
 
-img {
-    width: 100%;
-    height: auto;
-    border: var(--subtle-border);
-}
-
 header,
 footer {
-    padding: var(--gutter);
     border: var(--subtle-border);
     color: var(--dark-text-color);
     background-color: var(--secondary-color);
 }
 
-header {
-    margin-bottom: var(--vertical-chunk);
-    border-top: none;
-    border-radius: 0 0 32px 32px;
-}
-
-main {
-    padding: var(--gutter);
-}
-
+nav,
 h1,
 h2 {
     font-family: "Gabriela", serif;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
+button,
+#submit-button {
+    font-family: "Gabriela", serif;
+    cursor: pointer;
+}
+
+p,
+label {
+    font-size: 1.25rem;
+}
+
+.dark-link {
+    color: var(--contrast-color);
+}
+
+.dark-link:hover {
+    color: rgb(218, 20, 60);
+}
+
+.separate {
+    margin-top: var(--vertical-chunk);
+}
+
+.symbol-button {
+    border: none;
+    background: none;
+}
+
+/*
+#    # ######  ####  ####   ###### ######
+#    # #      #    # #   #  #      #    #
+###### ###### ###### #    # ###### ######
+#    # #      #    # #   #  #      #   # 
+#    # ###### #    # ####   ###### #    #
+*/
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 64px;
+    padding: var(--gutter) 1.5rem;
+    border-top: none;
+    border-radius: 0 0 3rem 3rem;
+}
+
+.header-link {
+    display: block;
+    padding: 0.6rem 0 0.6rem 1rem;
+    text-decoration: none;
+}
+
+#main-nav {
+    display: none;
+    font-size: 1.5rem;
+    text-align: right;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#main-nav.show {
+    display: block;
+}
+
+#main-nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#wayfinder {
+    text-shadow: 0 0 8px rgb(138, 43, 226);
+}
+
+#hamburger {
+    font-size: 2.5rem;
+    text-align: right;
+    align-self: center;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#hamburger:before {
+    content: "\2630";
+}
+
+#hamburger.show:before {
+    content: "X";
+}
+
+/*
+#       #  ####  ##### ##    #
+##     ## #    #   #   # #   #
+# #   # # ######   #   #  #  #
+#  # #  # #    #   #   #   # #
+#   #   # #    # ##### #    ##
+*/
+
+main {
+    flex: 1;
+}
+
 h1 {
-    padding: 0.5rem 0;
+    margin: var(--vertical-space) 0;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+dialog {
+    width: 40rem;
+    margin: auto;
+    padding: var(--gutter);
+    border: 4px solid var(--dark-text-color);
+    background-color: rgb(245, 222, 179);
+}
+
+dialog div {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
     font-size: 1.5rem;
     text-align: center;
 }
 
-h2 {
-    margin-bottom: 0.75rem;
-    font-size: 1.35rem;
-    text-decoration: underline;
-    color: var(--secondary-color);
+input,
+textarea {
+    display: block;
+    width: 90%;
+    max-width: 90%;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0.1rem;
+    font-family: "Artifika", serif;
+    font-size: 1.5rem;
 }
 
-p {
-    margin-bottom: var(--vertical-chunk);
-    font-size: 1.15rem;
+input:invalid,
+textarea:invalid {
+    border-left: 5px solid rgb(255, 0, 0);
 }
 
-picture {
-    margin-bottom: 1rem;
+input:valid,
+textarea:valid {
+    border-left: 5px solid rgb(0, 128, 0);
 }
 
-.collection {
+textarea {
+    height: 10rem;
+}
+
+.action-button,
+.close-button,
+#submit-button {
+    color: var(--light-text-color);
+    background-color: var(--contrast-color);
+}
+
+.action-button:hover,
+.close-button:hover,
+#submit-button:hover {
+    color: var(--dark-text-color);
+    background-color: var(--secondary-color);
+}
+
+.action-button {
+    margin: var(--vertical-chunk) auto;
+    padding: var(--gutter);
+    font-size: 2rem;
+}
+
+.board {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem auto;
+    row-gap: var(--vertical-chunk);
 }
 
-.image-label {
-    margin: 0.25rem 0;
-    font-size: 1rem;
+.block {
+    margin: var(--vertical-space) 0;
+}
+
+.button-area {
     text-align: center;
 }
+
+.card {
+    padding: 1rem;
+    border: var(--subtle-border);
+    border-radius: 3rem;
+    color: var(--dark-text-color);
+    background-color: var(--secondary-color);
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card p {
+    margin: 1rem 0;
+}
+
+.close-button {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.collection {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.image-text {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    right: 0%;
+    margin: 0 0.25rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--dark-text-color);
+    background-color: var(--translucent-secondary-color);
+}
+
+.labeled-image {
+    position: relative;
+}
+
+.labeled-image:hover .image-text {
+    color: var(--light-text-color);
+    background-color: var(--translucent-primary-color);
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border: var(--subtle-border);
+}
+
+#submit-button {
+    border: 1px solid var(--dark-text-color);
+}
+
+/*
+###### ########## ########## ##### ###### ######
+#      #        # #        #   #   #      #    #
+###### #        # #        #   #   ###### ######
+#      #        # #        #   #   #      #   #
+#      ########## ##########   #   ###### #    #
+*/
 
 footer {
-    padding: 1rem;
+    padding: var(--gutter) 0;
     border-bottom: none;
-    border-radius: 32px 32px 0 0;
-    font-size: 1.4rem;
+    border-radius: 3rem 3rem 0 0;
     text-align: center;
+}
+
+.footer-link {
+    display: block;
+    margin-top: 0.25rem;
 }
