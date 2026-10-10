@@ -5,14 +5,14 @@
             "author": "MaxStack",
             "license": "CC-BY-SA 3.0",
             "fileName": "stellar-tracks.zip",
-            "description": "This is music that was made for a cancelled video game. The album was called Game-Game, but I chose to name it Stellar Tracks because I liked the music so much! I also get the feeling of a cosmic train going to different worlds."
+            "description": "This is music that was made for a cancelled video game. The album was called Game-Game, but I chose to name it Stellar Tracks because I liked the music so much! It also gave me the feeling of a cosmic train going to different worlds."
         },
         {
             "name": "Endgame: Singularity",
             "author": "MaxStack",
             "license": "CC-BY-SA 3.0",
             "fileName": "endgame-singularity.zip",
-            "description": "This music combines strong melodies with an ominous feel. That is quite rare (I don't know why), but it works really well here."
+            "description": "This music combines strong melodies with an ominous feel. That is quite rare (I'm not sure why), but it works really well here."
         },
         {
             "name": "Carnival Rides",
@@ -33,14 +33,70 @@
             "author": "Matthew Klingensmith",
             "license": "CC-BY 3.0",
             "fileName": "left-and-right-excluded.mp3",
-            "description": "If jazz music was combined with a video game boss theme, this would be the result. It is both unusual and fun!"
+            "description": "If jazz music was combined with a battle theme, this would be the result. It is both unusual and fun!"
         },
         {
             "name": "Debugging",
             "author": "Martin Linda",
             "license": "CC-BY-SA 3.0",
             "fileName": "debugging.ogg",
-            "description": "This music has two distinct stages. It gives me the feeling of a programmer working at high speed. I would have bought this if it was being sold!"
+            "description": "This music gives me the feeling of a programmer picking up speed. I would have bought this if it was being sold!"
+        },
+        {
+            "name": "Town Stream",
+            "author": "AVGVSTA",
+            "license": "OGA-BY 3.0",
+            "fileName": "town-stream.ogg",
+            "description": "This track is pleasant and calm. It was originally just named Town, but I added the Stream part because I felt it deserved a more distinctive name."
+        },
+        {
+            "name": "Delightful Delving",
+            "author": "AVGVSTA",
+            "license": "OGA-BY 3.0",
+            "fileName": "delightful-delving.ogg",
+            "description": "This music is meant for a video game dungeon. Unlike most tracks of that category, this one has an optimistic tone with a sense of adventure."
+        },
+        {
+            "name": "Gem Maze",
+            "author": "Mopz",
+            "license": "CC0",
+            "fileName": "gem-maze.mp3",
+            "description": "I immediately loved this music when I first listened to it. It has a good flow paired with a strong melody."
+        },
+        {
+            "name": "Parting the Moss (version 1)",
+            "author": "Przemysław Sikorski",
+            "license": "CC-BY 3.0",
+            "fileName": "parting-the-moss-v1.mp3",
+            "description": "I have listened to this music over and over again. It so catchy and delightful!"
+        },
+        {
+            "name": "Parting the Moss (version 2)",
+            "author": "Przemysław Sikorski",
+            "license": "CC-BY 3.0",
+            "fileName": "parting-the-moss-v2.mp3",
+            "description": "This is similar to the first version of Parting the Moss but is more fast-paced. I also love this track, so I decided to keep it as well!"
+        },
+        {
+            "name": "Swagger",
+            "author": "LushoGames",
+            "license": "CC0",
+            "fileName": "swagger.mp3",
+            "description": "This isn't the kind of music I usually listen to, but it was so good I had to keep it! It gives me the feeling of a humanoid crocodile with heavy armor walking through town with no small swagger."
+        },
+        {
+            "name": "Warped",
+            "author": "Alexander Ehlers",
+            "license": "CC0",
+            "fileName": "warped.mp3",
+            "description": "This music has a mystical atmosphere with an undercurrent of danger. I found myself humming this music, which told me how good it is."
+        },
+        {
+            "name": "Mystical Caverns",
+            "author": "MichaelTheCrow",
+            "license": "CC-BY 3.0",
+            "fileName": "mystical-caverns.ogg",
+            "description": "I like how this music has a stronger melody compared to most cave tracks. It has a sense of both mystery and adventure."
         }
     ]
 }
